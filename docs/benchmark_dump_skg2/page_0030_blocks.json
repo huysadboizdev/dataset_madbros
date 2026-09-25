@@ -1,0 +1,327 @@
+[
+  {
+    "type": "heading",
+    "text": "Bài 1. Bất phương trình bậc nhất hai lần",
+    "latex": null,
+    "bbox": [
+      213.0,
+      160.0,
+      1458.0,
+      243.0
+    ],
+    "confidence": null,
+    "order": 0
+  },
+  {
+    "type": "paragraph",
+    "text": "Từ khoá: Bất phương trình bậc nhất hai lần; Nghiệm; Miễn nghiệm.",
+    "latex": null,
+    "bbox": [
+      404.0,
+      258.0,
+      1077.0,
+      297.0
+    ],
+    "confidence": null,
+    "order": 1
+  },
+  {
+    "type": "skipped_visual",
+    "text": null,
+    "latex": null,
+    "bbox": [
+      397.0,
+      322.0,
+      469.0,
+      396.0
+    ],
+    "confidence": null,
+    "order": 2
+  },
+  {
+    "type": "paragraph",
+    "text": "Đường thẳng d: $y = x + 1$ chia mặt phẳng toạ độ thành hai miền (không tính đường thẳng d) như hình bên. Dùng các nhãn dưới đây đặt vào miền phù hợp để đặt tên cho miền đó.",
+    "latex": null,
+    "bbox": [
+      468.0,
+      366.0,
+      1040.0,
+      521.0
+    ],
+    "confidence": null,
+    "order": 3
+  },
+  {
+    "type": "paragraph",
+    "text": "y > x + 1",
+    "latex": null,
+    "bbox": [
+      619.0,
+      534.0,
+      719.0,
+      569.0
+    ],
+    "confidence": null,
+    "order": 4
+  },
+  {
+    "type": "paragraph",
+    "text": "y<x+1",
+    "latex": null,
+    "bbox": [
+      805.0,
+      533.0,
+      907.0,
+      568.0
+    ],
+    "confidence": null,
+    "order": 5
+  },
+  {
+    "type": "skipped_visual",
+    "text": null,
+    "latex": null,
+    "bbox": [
+      1060.0,
+      347.0,
+      1296.0,
+      566.0
+    ],
+    "confidence": null,
+    "order": 6
+  },
+  {
+    "type": "heading",
+    "text": "1. Khái niệm bất phương trình bậc nhất hai lần",
+    "latex": null,
+    "bbox": [
+      213.0,
+      663.0,
+      1013.0,
+      710.0
+    ],
+    "confidence": null,
+    "order": 7
+  },
+  {
+    "type": "skipped_visual",
+    "text": null,
+    "latex": null,
+    "bbox": [
+      216.0,
+      731.0,
+      291.0,
+      797.0
+    ],
+    "confidence": null,
+    "order": 8
+  },
+  {
+    "type": "paragraph",
+    "text": "Bạn Nam để dành được 700 nghìn đồng. Trong một đợt ủng hộ các bạn học sinh ở vùng bị bão lụt, Nam đã ủng hộ x tờ tiền loại 20 nghìn đồng, y tờ tiền loại 50 nghìn đồng từ tiền để dành của mình.",
+    "latex": null,
+    "bbox": [
+      306.0,
+      741.0,
+      1413.0,
+      860.0
+    ],
+    "confidence": null,
+    "order": 9
+  },
+  {
+    "type": "paragraph",
+    "text": "Biểu diễn tổng số tiền bạn Nam đã ủng hộ theo x và y.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      867.0,
+      1034.0,
+      909.0
+    ],
+    "confidence": null,
+    "order": 10
+  },
+  {
+    "type": "paragraph",
+    "text": "b) Giải thích tại sao ta lại có bất đẳng thức 20x + 50y ≤ 700.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      915.0,
+      1070.0,
+      956.0
+    ],
+    "confidence": null,
+    "order": 11
+  },
+  {
+    "type": "skipped_visual",
+    "text": null,
+    "latex": null,
+    "bbox": [
+      212.0,
+      989.0,
+      286.0,
+      1059.0
+    ],
+    "confidence": null,
+    "order": 12
+  },
+  {
+    "type": "paragraph",
+    "text": "Bất phương trình bậc nhất hai lần x, y là bất phương trình có một trong các dạng",
+    "latex": null,
+    "bbox": [
+      297.0,
+      1047.0,
+      1360.0,
+      1090.0
+    ],
+    "confidence": null,
+    "order": 13
+  },
+  {
+    "type": "formula",
+    "text": null,
+    "latex": "ax+by+c<0;ax+by+c>0;ax+by+c\\leq0;ax+by+c\\geq0,",
+    "bbox": [
+      386.0,
+      1101.0,
+      1237.0,
+      1140.0
+    ],
+    "confidence": null,
+    "order": 14
+  },
+  {
+    "type": "paragraph",
+    "text": "trong đó a, b, c là những số cho trước; a, b không động thời bằng 0 và x, y là các ấn.",
+    "latex": null,
+    "bbox": [
+      295.0,
+      1148.0,
+      1362.0,
+      1195.0
+    ],
+    "confidence": null,
+    "order": 15
+  },
+  {
+    "type": "heading",
+    "text": "can troi sang tao",
+    "latex": null,
+    "bbox": [
+      539.0,
+      1217.0,
+      1102.0,
+      1291.0
+    ],
+    "confidence": null,
+    "order": 16
+  },
+  {
+    "type": "heading",
+    "text": "Ví dụ 1",
+    "latex": null,
+    "bbox": [
+      309.0,
+      1260.0,
+      412.0,
+      1301.0
+    ],
+    "confidence": null,
+    "order": 17
+  },
+  {
+    "type": "paragraph",
+    "text": "Tim bất phương trình bậc nhất hai ấn trong các bất phương trình sau đây:\na) $ x - 5y + 2 \\leq 0 $;\nb) $ 9x^{2} + 8y - 7 \\geq 0 $;\nc) $ 3x - 2 > 0 $;\nd) $ 4y + 11 \\leq 0 $.",
+    "latex": null,
+    "bbox": [
+      304.0,
+      1314.0,
+      1235.0,
+      1465.0
+    ],
+    "confidence": null,
+    "order": 18
+  },
+  {
+    "type": "paragraph",
+    "text": "Giải",
+    "latex": null,
+    "bbox": [
+      779.0,
+      1499.0,
+      847.0,
+      1535.0
+    ],
+    "confidence": null,
+    "order": 19
+  },
+  {
+    "type": "paragraph",
+    "text": "Các bất phương trình a), c), d) là các bất phương trình bậc nhất hai ẩn. Bất phương trình b) không là bất phương trình bậc nhất hai ẩn vì có chứa x2.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      1549.0,
+      1275.0,
+      1648.0
+    ],
+    "confidence": null,
+    "order": 20
+  },
+  {
+    "type": "heading",
+    "text": "Bất phương trình nào sau đây là bất phương trình bậc nhất hai lần?",
+    "latex": null,
+    "bbox": [
+      224.0,
+      1696.0,
+      1152.0,
+      1752.0
+    ],
+    "confidence": null,
+    "order": 21
+  },
+  {
+    "type": "paragraph",
+    "text": "a) $ 2x - 3y + 1 \\leq 0 $;\nc) y - 5 > 0;",
+    "latex": null,
+    "bbox": [
+      305.0,
+      1759.0,
+      555.0,
+      1858.0
+    ],
+    "confidence": null,
+    "order": 22
+  },
+  {
+    "type": "paragraph",
+    "text": "b) $ x - 3y + 1 \\geq 0 $;\nd) $ x - y^{2} + 1 > 0 $.",
+    "latex": null,
+    "bbox": [
+      774.0,
+      1756.0,
+      1010.0,
+      1859.0
+    ],
+    "confidence": null,
+    "order": 23
+  },
+  {
+    "type": "paragraph",
+    "text": "29",
+    "latex": null,
+    "bbox": [
+      1366.0,
+      1927.0,
+      1409.0,
+      1959.0
+    ],
+    "confidence": null,
+    "order": 24
+  }
+]

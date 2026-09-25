@@ -1,0 +1,72 @@
+﻿document: doc_2eefaa19dc65 pages: 138
+  [0s] status=RUNNING model_phase=None current=None
+  [5s] status=RUNNING model_phase=loading_model current=6
+  [10s] status=RUNNING model_phase=loading_model current=6
+  [15s] status=RUNNING model_phase=loading_model current=6
+  [20s] status=RUNNING model_phase=loading_model current=6
+  [25s] status=RUNNING model_phase=loading_model current=6
+  [30s] status=RUNNING model_phase=loading_model current=6
+  [35s] status=RUNNING model_phase=loading_model current=6
+  [40s] status=RUNNING model_phase=loading_model current=6
+  [45s] status=RUNNING model_phase=loading_model current=6
+  [50s] status=RUNNING model_phase=loading_model current=6
+  [55s] status=RUNNING model_phase=loading_model current=6
+  [60s] status=RUNNING model_phase=loading_model current=6
+  [65s] status=RUNNING model_phase=None current=6
+  [70s] status=RUNNING model_phase=None current=6
+  [75s] status=RUNNING model_phase=None current=6
+  [80s] status=RUNNING model_phase=None current=6
+  [85s] status=RUNNING model_phase=None current=6
+  [90s] status=RUNNING model_phase=None current=6
+  [95s] status=RUNNING model_phase=None current=6
+  [100s] status=RUNNING model_phase=None current=6
+  [105s] status=RUNNING model_phase=None current=6
+  [110s] status=RUNNING model_phase=None current=6
+  [115s] status=RUNNING model_phase=None current=6
+  [120s] status=RUNNING model_phase=None current=6
+  [125s] status=RUNNING model_phase=None current=6
+  [130s] status=RUNNING model_phase=None current=6
+  [135s] status=RUNNING model_phase=None current=6
+  [140s] status=RUNNING model_phase=None current=6
+  [145s] status=RUNNING model_phase=None current=6
+  [150s] status=RUNNING model_phase=None current=6
+  [155s] status=RUNNING model_phase=None current=6
+  [160s] status=RUNNING model_phase=None current=6
+  [165s] status=RUNNING model_phase=None current=6
+  [170s] status=RUNNING model_phase=None current=6
+  [175s] status=RUNNING model_phase=None current=6
+  [180s] status=RUNNING model_phase=None current=6
+  [185s] status=RUNNING model_phase=None current=6
+  [190s] status=RUNNING model_phase=None current=6
+  [195s] status=RUNNING model_phase=None current=6
+  [200s] status=RUNNING model_phase=None current=6
+  [205s] status=RUNNING model_phase=None current=6
+  [210s] status=RUNNING model_phase=None current=6
+  [215s] status=RUNNING model_phase=None current=6
+  [220s] status=RUNNING model_phase=None current=6
+  [225s] status=RUNNING model_phase=None current=6
+  [230s] status=RUNNING model_phase=None current=6
+  [235s] status=RUNNING model_phase=None current=6
+  [240s] status=RUNNING model_phase=None current=6
+  [245s] status=RUNNING model_phase=None current=6
+  [250s] status=RUNNING model_phase=None current=6
+  [255s] status=RUNNING model_phase=None current=6
+  [260s] status=RUNNING model_phase=None current=6
+  [265s] status=RUNNING model_phase=None current=6
+  [270s] status=RUNNING model_phase=None current=6
+  [275s] status=RUNNING model_phase=None current=6
+  [280s] status=RUNNING model_phase=None current=6
+  [285s] status=RUNNING model_phase=None current=6
+  [290s] status=RUNNING model_phase=None current=6
+  [295s] status=RUNNING model_phase=None current=6
+  [300s] status=COMPLETED model_phase=None current=None
+page status: SUCCEEDED method: ocr
+blocks: 4 issues: []
+  heading | PH├éN THß╗ÉNG K├è V├Ç X├üC SUß║ñT
+  paragraph | CH╞»╞áNG VI. THß╗ÉNG K├è
+B├ái 1. Sß╗æ gß║ºn ─æß╗⌐ng v├á sai sß╗æ
+B├ái 2. M├┤ tß║ú v├á biß╗âu 
+  heading | Ch├ón trß╗¥i s├íng tß║ío
+  paragraph | 5
+export: exp_452bd35909f8 document_001_pages_006_draft.zip 8652bb324ead58386fba6c44b71d55a0f11476b8e284ba5f7b0adb71967f7104
+da ghi: [PATH]

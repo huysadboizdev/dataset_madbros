@@ -1,0 +1,5 @@
+PATTERN: [A-Za-z]:[\\/]|\\\\|\busers\b|/home/|(?:[~\\/]|\bpath\s*)Huy\b
+ACCEPTANCE_REPORT.md:29 matched='users'
+   ...  (Windows drive `[PATH], UNC `[PATH], Unix `/home|users|var|tmp|…`, `[PATH], không phân biệt
+IMPLEMENTATION_STATUS.md:20 matched='Users'
+   ... đó nay pass). `test_export_sanitize` 5 + B5 sạch `Users`/`[PATH] |

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Giá trị nhỏ nhất của biểu thức là 3.",
+    "latex": null,
+    "bbox": [
+      141.0,
+      107.0,
+      1239.0,
+      191.0
+    ],
+    "confidence": null,
+    "order": 0
+  },
+  {
+    "type": "formula",
+    "text": null,
+    "latex": "$$ \\frac{2x-1}{x+3}\\geq5 $$",
+    "bbox": [
+      841.0,
+      499.0,
+      1432.0,
+      772.0
+    ],
+    "confidence": null,
+    "order": 1
+  },
+  {
+    "type": "paragraph",
+    "text": "Căn thức  $ \\sqrt{x} $ xác định khi  $ x \\geq 0 $.",
+    "latex": null,
+    "bbox": [
+      449.0,
+      1026.0,
+      1430.0,
+      1107.0
+    ],
+    "confidence": null,
+    "order": 2
+  }
+]

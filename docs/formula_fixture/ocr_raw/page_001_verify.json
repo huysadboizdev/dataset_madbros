@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "kind": "display",
+      "expected": "$\\dfrac{2x-1}{x+3} \\geq 5$",
+      "ok": "$$\\frac{2x-1}{x+3}≥5$$",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "\\frac{2x-1}{x+3}≥5",
+      "captured_norm": "$$\\frac{2x-1}{x+3}≥5$$"
+    },
+    {
+      "kind": "inline",
+      "expected": "Căn thức $\\sqrt{x}$ xác định khi $x \\geq 0$.",
+      "ok": "Giátrịnhỏnhấtcủabiểuthứclà3.Cănthức$√{x}$xácđịnhkhi$x≥0$.",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "Cănthức$√{x}$xácđịnhkhi$x≥0$.",
+      "captured_norm": "Giátrịnhỏnhấtcủabiểuthứclà3.Cănthức$√{x}$xácđịnhkhi$x≥0$."
+    }
+  ],
+  "failed": []
+}

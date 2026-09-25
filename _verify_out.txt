@@ -1,0 +1,5 @@
+SOURCE_SNAPSHOT.sha256: 94 file, moi entry khop byte that; AGGREGATE = e038109bb2a07c8cddb6efa60bcc3983d815f9e6641b00c1cc57ebcba901abf4
+EVIDENCE_SNAPSHOT.sha256: 28 file, moi entry khop byte that; AGGREGATE = a8df8a76ed7924fa4d8e028561f3bb9ba3ca7eac1b1758574525ad982a16d5e3
+one-way reference: OK (EVIDENCE -> SOURCE)
+bao cáo khop SOURCE AGGREGATE: e038109bb2a07c8cddb6efa60bcc3983d815f9e6641b00c1cc57ebcba901abf4
+VERIFY HOAN TAT: TAT CA KHOP

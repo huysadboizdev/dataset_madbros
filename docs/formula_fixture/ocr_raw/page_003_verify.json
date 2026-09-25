@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "kind": "display",
+      "expected": "$\\frac{3x-1}{2} < x + 4$",
+      "ok": "$$\\frac{3x-1}{2}<x+4$$",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "\\frac{3x-1}{2}<x+4",
+      "captured_norm": "$$\\frac{3x-1}{2}<x+4$$"
+    },
+    {
+      "kind": "inline",
+      "expected": "Tập nghiệm $S = (-\\infty;\\, 9)$.",
+      "ok": "Nghiệmcủabấtphươngtrình:Tậpnghiệm$S=(-∞;9)$.",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "Tậpnghiệm$S=(-∞;9)$.",
+      "captured_norm": "Nghiệmcủabấtphươngtrình:Tậpnghiệm$S=(-∞;9)$."
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,27 @@
+# Khoa phien ban thuc te trong D:\OCR_Local\.venv313 (Python 3.13.14) ngay 14/09/2026.
+# Khong nang cap toan cuc. Chi cai bang: python -m pip install -r requirements.lock.txt
+paddlepaddle==3.3.0
+paddleocr==3.7.0
+paddlex==3.7.2
+pypdfium2==5.13.0
+pydantic==2.13.5
+fastapi==0.141.1
+uvicorn==0.53.0
+starlette==1.6.0
+anyio==4.15.1
+python-multipart==0.0.32
+httpx==0.28.1
+pytest==9.1.1
+pillow==12.3.0
+numpy==2.3.5
+opencv-contrib-python==4.10.0.84
+requests==2.34.2
+huggingface_hub==1.31.0
+modelscope==1.40.0
+tokenizers==0.23.2
+safetensors==0.8.0
+einops==0.8.2
+shapely==2.1.2
+lxml==6.1.3
+ftfy==6.3.1
+regex==2026.9.10

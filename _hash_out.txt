@@ -1,0 +1,5 @@
+sanitize tai cho: 0 file doi
+sanitized logs: 4 file
+validator: docs/ CLEAN (khong con leak)
+da ghi 28 file -> docs\EVIDENCE_SNAPSHOT.sha256
+AGGREGATE: a8df8a76ed7924fa4d8e028561f3bb9ba3ca7eac1b1758574525ad982a16d5e3

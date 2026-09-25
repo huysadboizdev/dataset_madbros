@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+input/*.pdf
+input/*.png
+frontend/node_modules/
+frontend/dist/
+frontend/tests/fixtures/*.pdf
+config.json
+*.log
+.venv*/
+docs/BENCHMARK_RAW_*.json
+.pytest_tmp/
+frontend/test-results/

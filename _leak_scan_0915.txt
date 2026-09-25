@@ -1,0 +1,24 @@
+﻿benchmark_dump_skg2\page_0010_blocks.json : line 95 : "text": "a) Với $ x=\\frac{1}{2} $ thì $ P\\left(\\frac{1}{2}\\right) $: “2 $ \\cdot $ $ \\frac{1}{2} $=1” là mệnh đề đúng.",
+benchmark_dump_skg2\page_0010_blocks.json : line 238 : "text": "Xét các cặp mệnh đề năm cùng dòng của bảng (có hai cột P và $ \\overline{P} $) sau đây:",
+benchmark_dump_skg2\page_0010_blocks.json : line 251 : "text": "| P | $ \\overline{P} $ |\n|---|---|\n| Dơi là một loài chim. | Dơi không phải là một loài chim. |\n| $ \\pi $ không phải là một số hữu tỉ. | $ \\pi $ là một số hữu tỉ. |\n| $ \\sqrt{2} + \\s
+benchmark_dump_skg2\page_0010_blocks.json : line 277 : "text": "Với từng cặp mệnh đề P và $ \\overline{P} $ ở 3, ta thấy chúng có tính đứng sai trái ngược nhau (P đứng thì $ \\overline{P} $ sai và ngược lại). Ta nói mệnh đề $ \\overline{P} $ là mệnh đề ph
+benchmark_dump_skg2\page_0030_blocks.json : line 187 : "latex": "ax+by+c<0;ax+by+c>0;ax+by+c\\leq0;ax+by+c\\geq0,",
+benchmark_dump_skg2\page_0030_blocks.json : line 238 : "text": "Tim bất phương trình bậc nhất hai ấn trong các bất phương trình sau đây:\na) $ x - 5y + 2 \\leq 0 $;\nb) $ 9x^{2} + 8y - 7 \\geq 0 $;\nc) $ 3x - 2 > 0 $;\nd) $ 4y + 11 \\leq 0 $.",
+benchmark_dump_skg2\page_0030_blocks.json : line 290 : "text": "a) $ 2x - 3y + 1 \\leq 0 $;\nc) y - 5 > 0;",
+benchmark_dump_skg2\page_0030_blocks.json : line 303 : "text": "b) $ x - 3y + 1 \\geq 0 $;\nd) $ x - y^{2} + 1 > 0 $.",
+formula_fixture\ocr_raw\page_001_blocks.json : line 18 : "latex": "$$ \\frac{2x-1}{x+3}\\geq5 $$",
+formula_fixture\ocr_raw\page_001_blocks.json : line 30 : "text": "Căn thức  $ \\sqrt{x} $ xác định khi  $ x \\geq 0 $.",
+formula_fixture\ocr_raw\page_001_verify.json : line 6 : "expected": "$\\dfrac{2x-1}{x+3} \\geq 5$",
+formula_fixture\ocr_raw\page_001_verify.json : line 7 : "ok": "$$\\frac{2x-1}{x+3}≥5$$",
+formula_fixture\ocr_raw\page_001_verify.json : line 10 : "expected_norm": "\\frac{2x-1}{x+3}≥5",
+formula_fixture\ocr_raw\page_001_verify.json : line 11 : "captured_norm": "$$\\frac{2x-1}{x+3}≥5$$"
+formula_fixture\ocr_raw\page_001_verify.json : line 15 : "expected": "Căn thức $\\sqrt{x}$ xác định khi $x \\geq 0$.",
+formula_fixture\ocr_raw\page_002_blocks.json : line 18 : "latex": "$$ \\sqrt{a^{2}+b^{2}}=\\sqrt{5} $$",
+formula_fixture\ocr_raw\page_002_verify.json : line 6 : "expected": "$\\sqrt{a^{2}+b^{2}} = \\sqrt{5}$",
+formula_fixture\ocr_raw\page_003_blocks.json : line 18 : "latex": "$$ \\frac{3x-1}{2}<x+4 $$",
+formula_fixture\ocr_raw\page_003_blocks.json : line 30 : "text": "Tập nghiệm $S = (-\\infty; 9)$.",
+formula_fixture\ocr_raw\page_003_verify.json : line 6 : "expected": "$\\frac{3x-1}{2} < x + 4$",
+formula_fixture\ocr_raw\page_003_verify.json : line 7 : "ok": "$$\\frac{3x-1}{2}<x+4$$",
+formula_fixture\ocr_raw\page_003_verify.json : line 10 : "expected_norm": "\\frac{3x-1}{2}<x+4",
+formula_fixture\ocr_raw\page_003_verify.json : line 11 : "captured_norm": "$$\\frac{3x-1}{2}<x+4$$"
+formula_fixture\ocr_raw\page_003_verify.json : line 15 : "expected": "Tập nghiệm $S = (-\\infty;\\, 9)$.",

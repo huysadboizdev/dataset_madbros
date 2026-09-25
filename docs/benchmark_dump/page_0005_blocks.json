@@ -1,0 +1,54 @@
+[
+ {
+  "type": "heading",
+  "text": "Mục lục",
+  "latex": null,
+  "bbox": [
+   410.0,
+   167.0,
+   557.0,
+   230.0
+  ],
+  "confidence": null,
+  "order": 0
+ },
+ {
+  "type": "paragraph",
+  "text": "Trang",
+  "latex": null,
+  "bbox": [
+   1354.0,
+   249.0,
+   1433.0,
+   287.0
+  ],
+  "confidence": null,
+  "order": 1
+ },
+ {
+  "type": "paragraph",
+  "text": "PHÂN ĐẠI SỐ VÀ MỘT SỐ YẾU TỐ GIẢI TÍCH\n\nChương I. MỆNH ĐỀ VÀ TẬP HỢP\nBài 1. Mệnh đề\nBài 2. Tập hợp\nBài 3. Các phép toán trên tập hợp\nBài tập cuối chương I\n\nChương II. BẮT PHƯƠNG TRÌNH VÀ HỆ BẮT PHƯƠNG TRÌNH BẮC NHẤT HAI ĂN\nBài 1. Bất phương trình bác nhất hai ấn\nBài 2. Hệ bất phương trình bác nhất hai ấn\nBài tập cuối chương II\n\nChương III. HÀM SỐ BẮC HAI VÀ ĐỔ THỊ\nBài 1. Hàm số và đồ thi\nBài 2. Hàm số bác hai\nBài tập cuối chương III\n\nPHẦN HÌNH HỌC VÀ ĐO LƯỢNG\nChương IV. HỆ THỰC LƯỢNG TRONG TAM GIÁC\nBài 1. Giá tri lượng giác của một góc từ 0° đến 180°\nBài 2. Định lí côn và định lí sin\nBài 3. Giải tam giác và ứng dụng thực tế\nBài tập cuối chương IV\n\nChương V. VECTỞ\nBài 1. Khái niệm vectơ\nBài 2. Tổng và hiệu của hai vectơ\nBài 3. Tích của một số với một vectơ\nBài 4. Tích vô hướng của hai vectơ\nBài tập cuối chương V",
+  "latex": null,
+  "bbox": [
+   248.0,
+   290.0,
+   1426.0,
+   1741.0
+  ],
+  "confidence": null,
+  "order": 2
+ },
+ {
+  "type": "paragraph",
+  "text": "4",
+  "latex": null,
+  "bbox": [
+   239.0,
+   1930.0,
+   263.0,
+   1958.0
+  ],
+  "confidence": null,
+  "order": 3
+ }
+]

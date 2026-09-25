@@ -1,0 +1,41 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Độ dài cạnh huyền bằng căn hai của 5.",
+    "latex": null,
+    "bbox": [
+      141.0,
+      107.0,
+      1359.0,
+      191.0
+    ],
+    "confidence": null,
+    "order": 0
+  },
+  {
+    "type": "formula",
+    "text": null,
+    "latex": "$$ \\sqrt{a^{2}+b^{2}}=\\sqrt{5} $$",
+    "bbox": [
+      752.0,
+      542.0,
+      1522.0,
+      696.0
+    ],
+    "confidence": null,
+    "order": 1
+  },
+  {
+    "type": "paragraph",
+    "text": "Nếu  $ a^{2} + b^{2} = c^{2} $ thì tam giác vuông tại C.",
+    "latex": null,
+    "bbox": [
+      447.0,
+      1020.0,
+      1751.0,
+      1110.0
+    ],
+    "confidence": null,
+    "order": 2
+  }
+]

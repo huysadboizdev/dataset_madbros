@@ -1,0 +1,17 @@
+{
+  "host": "127.0.0.1",
+  "port": 8765,
+  "data_dir": "data",
+  "input_max_mb": 200,
+  "ocr": {
+    "engine": "paddleocr_vl",
+    "device": "cpu",
+    "pipeline_version": "v1.6",
+    "layout_model_name": "PP-DocLayoutV3",
+    "vl_rec_model_name": "PaddleOCR-VL-1.6",
+    "render_dpi": 200,
+    "page_timeout_s": 600,
+    "worker_idle_unload_s": 300
+  },
+  "preview_dpi": 96
+}

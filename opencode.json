@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "provider": {
+    "bai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "B.AI",
+      "options": {
+        "baseURL": "https://api.b.ai/v1",
+        "apiKey": "{env:BAI_API_KEY}"
+      },
+      "models": {
+        "glm-5.3-flash": {
+          "name": "GLM-5.3-Flash"
+        }
+      }
+    },
+
+    "vyce": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "VyceAI",
+      "options": {
+        "baseURL": "https://vyceai.com/v1",
+        "apiKey": "{env:VYCE_API_KEY}"
+      },
+      "models": {
+        "gpt-5.6-sol": {
+          "name": "GPT-5.6 Sol"
+        }
+      }
+    }
+  },
+
+  "model": "vyce/gpt-5.6-sol"
+}

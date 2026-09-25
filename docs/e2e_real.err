@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "[PATH]", line 64, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "[PATH]", line 53, in main
+    print(" ", b["type"], "|", (b["text"] or "")[:70])
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PATH]", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ed0' in position 7: character maps to <undefined>

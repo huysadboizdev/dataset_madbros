@@ -1,0 +1,54 @@
+[
+ {
+  "type": "heading",
+  "text": "PHÂN THỐNG KÊ VÀ XÁC SUẤT",
+  "latex": null,
+  "bbox": [
+   223.0,
+   288.0,
+   577.0,
+   335.0
+  ],
+  "confidence": null,
+  "order": 0
+ },
+ {
+  "type": "paragraph",
+  "text": "CHƯƠNG VI. THỐNG KÊ\nBài 1. Số gần đứng và sai số\nBài 2. Mô tả và biểu diễn đữ liệu trên các bảng và biểu đồ\nBài 3. Các số đặc trưng đo xu thế trung tâm của mẫu số liệu\nBài 4. Các số đặc trưng đo mức độ phân tán của mẫu số liệu\nBài tập cuối chương VI\nHOẠT ĐỘNG THỰC HÀNH VÀ TRẦI NGHIỆM\nBài 1. Dùng máy tính cảm tay để tính toán với số gần đứng và tính các số đặc trưng của mẫu số liệu thống kê\nBài 2. Dùng bảng tính để tính các số đặc trưng của mẫu số liệu thống kê\nBảng giải thích thuật ngữ\nBảng tra cứu thuật ngữ",
+  "latex": null,
+  "bbox": [
+   220.0,
+   350.0,
+   1400.0,
+   947.0
+  ],
+  "confidence": null,
+  "order": 1
+ },
+ {
+  "type": "heading",
+  "text": "Chân trời sáng tạo",
+  "latex": null,
+  "bbox": [
+   537.0,
+   1188.0,
+   1103.0,
+   1294.0
+  ],
+  "confidence": null,
+  "order": 2
+ },
+ {
+  "type": "paragraph",
+  "text": "5",
+  "latex": null,
+  "bbox": [
+   1385.0,
+   1929.0,
+   1409.0,
+   1958.0
+  ],
+  "confidence": null,
+  "order": 3
+ }
+]

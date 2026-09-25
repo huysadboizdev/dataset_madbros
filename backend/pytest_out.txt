@@ -1,0 +1,4 @@
+ImportError while loading conftest 'D:\OCR_Local\pdf-cleaner-tool\backend\app\tests\conftest.py'.
+app\tests\conftest.py:10: in <module>
+    from fastapi.testclient import TestClient
+E   ModuleNotFoundError: No module named 'fastapi'

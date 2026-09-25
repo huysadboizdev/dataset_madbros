@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "kind": "display",
+      "expected": "$\\sqrt{a^{2}+b^{2}} = \\sqrt{5}$",
+      "ok": "$$√{a^2+b^2}=√{5}$$",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "√{a^2+b^2}=√{5}",
+      "captured_norm": "$$√{a^2+b^2}=√{5}$$"
+    },
+    {
+      "kind": "inline",
+      "expected": "Nếu $a^{2}+b^{2}=c^{2}$ thì tam giác vuông tại C.",
+      "ok": "Độdàicạnhhuyềnbằngcănhaicủa5.Nếu$a^2+b^2=c^2$thìtamgiácvuôngtạiC.",
+      "reason": "OK",
+      "missing": [],
+      "expected_norm": "Nếu$a^2+b^2=c^2$thìtamgiácvuôngtạiC.",
+      "captured_norm": "Độdàicạnhhuyềnbằngcănhaicủa5.Nếu$a^2+b^2=c^2$thìtamgiácvuôngtạiC."
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,197 @@
+[
+ {
+  "type": "paragraph",
+  "text": "Phân",
+  "latex": null,
+  "bbox": [
+   213.0,
+   164.0,
+   458.0,
+   330.0
+  ],
+  "confidence": null,
+  "order": 0
+ },
+ {
+  "type": "heading",
+  "text": "ĐẠI SỐ VÀ MỘT SỐ YẾU TỐ GIẢI TÍCH",
+  "latex": null,
+  "bbox": [
+   472.0,
+   145.0,
+   1410.0,
+   333.0
+  ],
+  "confidence": null,
+  "order": 1
+ },
+ {
+  "type": "heading",
+  "text": "Chương I MÊNH ĐỀ VÀ TẬP HỢP",
+  "latex": null,
+  "bbox": [
+   217.0,
+   386.0,
+   1323.0,
+   497.0
+  ],
+  "confidence": null,
+  "order": 2
+ },
+ {
+  "type": "paragraph",
+  "text": "Mệnh đề và tập hợp được coi là ngôn ngữ của toán học, là công cụ giúp con người diễn đạt các phát biểu toán học trở nên thống nhất, ngắn gọn, rõ ràng và chính xác.",
+  "latex": null,
+  "bbox": [
+   252.0,
+   587.0,
+   1409.0,
+   659.0
+  ],
+  "confidence": null,
+  "order": 3
+ },
+ {
+  "type": "paragraph",
+  "text": "Trong chương này, chúng ta sẽ tìm hiểu về hai khái niệm mệnh đề và tập hợp, cũng như một số khái niệm cơ bản liên quan và làm quen với việc sử dụng chúng trong học tập và cuộc sống.",
+  "latex": null,
+  "bbox": [
+   252.0,
+   670.0,
+   1410.0,
+   748.0
+  ],
+  "confidence": null,
+  "order": 4
+ },
+ {
+  "type": "skipped_visual",
+  "text": null,
+  "latex": null,
+  "bbox": [
+   273.0,
+   795.0,
+   1355.0,
+   1352.0
+  ],
+  "confidence": null,
+  "order": 5
+ },
+ {
+  "type": "paragraph",
+  "text": "Sách ở thư viện được sắp xếp như thế nào để thuận tiện cho việc quản lí và tìm kiếm?",
+  "latex": null,
+  "bbox": [
+   251.0,
+   1389.0,
+   1019.0,
+   1423.0
+  ],
+  "confidence": null,
+  "order": 6
+ },
+ {
+  "type": "skipped_visual",
+  "text": null,
+  "latex": null,
+  "bbox": [
+   227.0,
+   1447.0,
+   299.0,
+   1515.0
+  ],
+  "confidence": null,
+  "order": 7
+ },
+ {
+  "type": "heading",
+  "text": "Học xong chương này, bạn có thể:",
+  "latex": null,
+  "bbox": [
+   304.0,
+   1463.0,
+   762.0,
+   1502.0
+  ],
+  "confidence": null,
+  "order": 8
+ },
+ {
+  "type": "paragraph",
+  "text": "Nhận biết và lấy được ví dụ về mệnh đề, mệnh đề phủ định, mệnh đề kéo theo, mệnh đề đảo, mệnh đề tương đương, mệnh đề chưa kí hiệu ∀ và ∃; sử dụng đúng các thuật ngữ điều kiện cần, điều kiện đủ, điều kiện cần và đủ.",
+  "latex": null,
+  "bbox": [
+   323.0,
+   1520.0,
+   1378.0,
+   1636.0
+  ],
+  "confidence": null,
+  "order": 9
+ },
+ {
+  "type": "paragraph",
+  "text": "Xác định được tính đúng sai của mệnh đề trong những trường hợp đơn giản.",
+  "latex": null,
+  "bbox": [
+   325.0,
+   1639.0,
+   1273.0,
+   1677.0
+  ],
+  "confidence": null,
+  "order": 10
+ },
+ {
+  "type": "paragraph",
+  "text": "- Nhận biết được các khái niệm cơ bản về tập hợp (tập hợp, phần tử, tập con, hai tập hợp bằng nhau, tập rỗng); sử dụng đúng các kí hiệu ∈, ⊂, ∅.",
+  "latex": null,
+  "bbox": [
+   325.0,
+   1679.0,
+   1375.0,
+   1754.0
+  ],
+  "confidence": null,
+  "order": 11
+ },
+ {
+  "type": "paragraph",
+  "text": "Thực hiện được phép toán trên tập hợp (hợp, giao, hiệu của hai tập hợp, phần bù của tập con); minh hoạ được bằng biểu đồ Vén.",
+  "latex": null,
+  "bbox": [
+   325.0,
+   1757.0,
+   1375.0,
+   1831.0
+  ],
+  "confidence": null,
+  "order": 12
+ },
+ {
+  "type": "paragraph",
+  "text": "Giải quyết được một số vấn đề thực tiễn liên quan đến số phần tử của tập hợp và các phép toán trên tập hợp.",
+  "latex": null,
+  "bbox": [
+   323.0,
+   1834.0,
+   1376.0,
+   1913.0
+  ],
+  "confidence": null,
+  "order": 13
+ },
+ {
+  "type": "paragraph",
+  "text": "6",
+  "latex": null,
+  "bbox": [
+   240.0,
+   1930.0,
+   263.0,
+   1959.0
+  ],
+  "confidence": null,
+  "order": 14
+ }
+]

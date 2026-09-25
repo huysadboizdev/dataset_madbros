@@ -1,0 +1,14 @@
+﻿17: **AGGREGATE = `e27ae846ea4086c27656d417ceff1ef3a76a7655a13ed22c3ac4b96b566a7a9d`**
+23: mỗi manifest **không tự hash chính nó**. (Không ghi aggregate của EVIDENCE vào chính báo cáo
+53: | A1 | `pytest backend/app/tests -q` | **137 passed / 137 collected** (đo thật đợt 3). Minh bạch: đầu đợt 3 khi xác minh lại các kết luận PASS cũ, suite có **1 test FAILED** (`test_export_sanitize::test_root_named_boolean_key_is_NOT_dropped` — sanitizer xóa nhầm key lành, xem S3); sau khi sửa bug thật + thêm 2 test identity (S4), toàn bộ xanh. **Không** giữ số "131" hay "134" làm hiện hành (xem LỊCH SỬ) |
+54: | A2 | `npm run typecheck` (TS strict) | pass (đo lại đợt 3) |
+56: | A4 | `npm run test:e2e` (Playwright chromium, **6 spec**) | **6 passed** (đo lại đợt 3 trên backend sau sửa; `flow.spec` 4/4 + `formula.spec` 2/2) |
+59: **Bằng chứng định lượng (mỗi số đếm bằng `pytest --co`, đo thật đợt 3, tổng = 137)**:
+209: (chứa `[PATH]<me>\…`, đường dẫn dự án tuyệt đối) vào gói chia sẻ; báo cáo trích số liệu/aggregate không khớp
+215: → tham chiếu **một chiều** evidence→source; source không chứa bất kỳ tham chiếu nào ngược lại; aggregate chỉ tính trên
+222: đối chiếu aggregate ghi trong báo cáo này bằng cách mở trực tiếp `SOURCE_SNAPSHOT.sha256`. Kết quả đếm file lấy
+251: **Đợt 2 (15/09/2026):** ghi "131 passed" và sau đó "134 passed" — **cả hai không phản ánh đúng** lần chạy cuối
+252: (đầu đợt 3 xác minh: suite có 1 FAILED — sanitizer xóa nhầm key; bug đã sửa + 2 test S4 mới → 137). Phép cộng
+253: cũ "93 → 131 = +38" đúng số học nhưng dựa trên số chốt sai; **bãi bỏ**, chỉ còn số hiện hành **137**.
+258: launcher Windows, nghiệm thu **73 passed**, e2e OCR thật trang 6. (Chi tiết: `IMPLEMENTATION_STATUS.md` mục lịch sử.)
+261: nâng cấp fixture công thức từ vẽ tay→toán set; thêm `hash_source.py`; **93 passed**, Playwright 4/4. (Superseded.)

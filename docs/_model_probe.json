@@ -1,0 +1,24 @@
+{
+ "wrapper_attrs": [
+  "_abc_impl",
+  "_common_args",
+  "_create_paddlex_pipeline",
+  "_get_merged_paddlex_config",
+  "_get_paddlex_config_overrides",
+  "_merged_paddlex_config",
+  "_paddlex_config",
+  "_paddlex_pipeline_name",
+  "_params",
+  "close",
+  "concatenate_markdown_pages",
+  "export_paddlex_config_to_yaml",
+  "get_cli_subcommand_executor",
+  "paddlex_pipeline",
+  "pipeline_version",
+  "predict",
+  "predict_iter",
+  "restructure_pages"
+ ],
+ "inner_type": "PaddleOCRVL16Pipeline",
+ "submodels": {}
+}

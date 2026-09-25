@@ -1,0 +1,65 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "skills": {
+    "paths": [
+      "D:\\skill_ai\\.agents\\skills"
+    ]
+  },
+
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  },
+
+  "provider": {
+    "vyce": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "VyceAI",
+      "options": {
+        "baseURL": "https://vyceai.com/v1",
+        "apiKey": "{env:VYCEAI_API_KEY}"
+      },
+      "models": {
+        "claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "deepseek-v4.1": {
+          "name": "DeepSeek V4.1"
+        },
+        "agnes-3.0-flash": {
+          "name": "Agnes 3.0 Flash"
+        }
+      }
+    },
+
+    "router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "9Router",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "{env:ROUTER_API_KEY}"
+      },
+      "models": {
+        "xpl/gpt-5.6-luna": {
+          "name": "GPT-5.6 Luna - Experiential"
+        },
+
+        "xpl/grok-4.7": {
+          "name": "Grok 4.7 - Experiential"
+        },
+
+        "xpl/nemotron-3-ultra-550b-a55b": {
+          "name": "Nemotron 3 Ultra - Experiential"
+        }
+      }
+    }
+  },
+
+  "model": "router/xpl/gpt-5.6-luna",
+
+  "small_model": "vyce/agnes-3.0-flash",
+
+  "share": "disabled"
+}

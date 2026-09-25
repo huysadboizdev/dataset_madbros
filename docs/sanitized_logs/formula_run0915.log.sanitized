@@ -1,0 +1,54 @@
+﻿fixture set that: [PATH]
+model that: layout=PP-DocLayoutV3 vl=PaddleOCR-VL-1.6-0.9B (paddleocr 3.7.0)
+p1: formula_block=True display_ok=True inline_ok=True ok=True thieu=[]
+p2: formula_block=True display_ok=True inline_ok=True ok=True thieu=[]
+p3: formula_block=True display_ok=True inline_ok=True ok=True thieu=[]
+# Nghiß╗çm thu c├┤ng thß╗⌐c THß║¼T (fixture set bß║▒ng matplotlib mathtext)
+
+Engine thß║¡t: `PP-DocLayoutV3` + `PaddleOCR-VL-1.6-0.9B` (paddleocr 3.7.0) ┬╖ DPI render 220 ┬╖ mode=`live OCR` ┬╖ Model config: `docs/formula_fixture/model_meta.json` ┬╖ raw per-page: `docs/formula_fixture/ocr_raw/`
+
+─Éß╗æi chiß║┐u bß║▒ng `backend/app/cleaning/math_verify.verify_all`: **GIß╗«** to├ín tß╗¡ (=,<,>,ΓëÑ,Γëñ,+,ΓêÆ,^) v├á cß║Ñu tr├║c (\frac, ΓêÜ, ^); chß╗ë chuß║⌐n ho├í \dfracΓåÆ\fracΓÇª ─æ├ú ─æß╗ïnh ngh─⌐a; bß║»t buß╗Öc ─æß╗º Cß║ó display V├Ç inline; substring rß╗¥i rß║íc kh├┤ng phß║úi bß║▒ng chß╗⌐ng duy nhß║Ñt.
+
+| Trang | Block formula | Display OK | Inline OK | K├╜ hiß╗çu thiß║┐u | Kß║┐t luß║¡n |
+|---|---|---|---|---|---|
+| 1 | True | True | True | ΓÇö | ─Éß║áT (c├║ ph├íp+hiß╗çn diß╗çn) |
+| 2 | True | True | True | ΓÇö | ─Éß║áT (c├║ ph├íp+hiß╗çn diß╗çn) |
+| 3 | True | True | True | ΓÇö | ─Éß║áT (c├║ ph├íp+hiß╗çn diß╗çn) |
+
+## Trang 1: `$\dfrac{2x-1}{x+3} \geq 5$` + inline `C─ân thß╗⌐c $\sqrt{x}$ x├íc ─æß╗ïnh khi $x \geq 0$.`
+
+- Block formula bß║»t ─æ╞░ß╗úc: **True** (thiß║┐u block KH├öNG phß║úi bß║▒ng chß╗⌐ng duy nhß║Ñt).
+- Γ£à display: `$\dfrac{2x-1}{x+3} \geq 5$` ΓåÆ OK
+- Γ£à inline: `C─ân thß╗⌐c $\sqrt{x}$ x├íc ─æß╗ïnh khi $x \geq 0$.` ΓåÆ OK
+- OCR trß║ú vß╗ü THß║¼T (─æ├ú gß╗Öp block):
+  - `paragraph`: `Gi├í trß╗ï nhß╗Å nhß║Ñt cß╗ºa biß╗âu thß╗⌐c l├á 3.`
+  - `formula`: `$$ \frac{2x-1}{x+3}\geq5 $$`
+  - `paragraph`: `C─ân thß╗⌐c  $ \sqrt{x} $ x├íc ─æß╗ïnh khi  $ x \geq 0 $.`
+
+## Trang 2: `$\sqrt{a^{2}+b^{2}} = \sqrt{5}$` + inline `Nß║┐u $a^{2}+b^{2}=c^{2}$ th├¼ tam gi├íc vu├┤ng tß║íi C.`
+
+- Block formula bß║»t ─æ╞░ß╗úc: **True** (thiß║┐u block KH├öNG phß║úi bß║▒ng chß╗⌐ng duy nhß║Ñt).
+- Γ£à display: `$\sqrt{a^{2}+b^{2}} = \sqrt{5}$` ΓåÆ OK
+- Γ£à inline: `Nß║┐u $a^{2}+b^{2}=c^{2}$ th├¼ tam gi├íc vu├┤ng tß║íi C.` ΓåÆ OK
+- OCR trß║ú vß╗ü THß║¼T (─æ├ú gß╗Öp block):
+  - `paragraph`: `─Éß╗Ö d├ái cß║ính huyß╗ün bß║▒ng c─ân hai cß╗ºa 5.`
+  - `formula`: `$$ \sqrt{a^{2}+b^{2}}=\sqrt{5} $$`
+  - `paragraph`: `Nß║┐u  $ a^{2} + b^{2} = c^{2} $ th├¼ tam gi├íc vu├┤ng tß║íi C.`
+
+## Trang 3: `$\frac{3x-1}{2} < x + 4$` + inline `Tß║¡p nghiß╗çm $S = (-\infty;\, 9)$.`
+
+- Block formula bß║»t ─æ╞░ß╗úc: **True** (thiß║┐u block KH├öNG phß║úi bß║▒ng chß╗⌐ng duy nhß║Ñt).
+- Γ£à display: `$\frac{3x-1}{2} < x + 4$` ΓåÆ OK
+- Γ£à inline: `Tß║¡p nghiß╗çm $S = (-\infty;\, 9)$.` ΓåÆ OK
+- OCR trß║ú vß╗ü THß║¼T (─æ├ú gß╗Öp block):
+  - `paragraph`: `Nghiß╗çm cß╗ºa bß║Ñt ph╞░╞íng tr├¼nh:`
+  - `formula`: `$$ \frac{3x-1}{2}<x+4 $$`
+  - `paragraph`: `Tß║¡p nghiß╗çm $S = (-\infty; 9)$.`
+
+## Kß║┐t luß║¡n
+
+─Éß║áT: mß╗ìi biß╗âu thß╗⌐c (display V├Ç inline) khß╗¢p vß╗ü k├╜ hiß╗çu + to├ín tß╗¡ + cß║Ñu tr├║c; LaTeX round-trip JSON nguy├¬n ven (xem test_formula_pipeline); c├║ ph├íp basic-check sß║ích. Engine chuß║⌐n ho├í \dfracΓåÆ\frac (c├╣ng ph├ón sß╗æ, kh├┤ng mß║Ñt nß╗Öi dung).
+
+_─É├óy l├á Lß║ªN Gß╗îI ENGINE THß║¼T (kh├┤ng mock, kh├┤ng lß║Ñy log FAIL c┼⌐ l├ám bß║▒ng chß╗⌐ng PASS). Raw per-page + model_meta ─æ├ú l╞░u k├¿m. ─Éß╗ÉI CHIß║╛U ├¥ NGH─¿A to├ín hß╗ìc Cß║ªN NG╞»ß╗£I duyß╗çt._
+
+bao cao: docs\FORMULA_CHECK.md

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Nghiệm của bất phương trình:",
+    "latex": null,
+    "bbox": [
+      144.0,
+      107.0,
+      1096.0,
+      192.0
+    ],
+    "confidence": null,
+    "order": 0
+  },
+  {
+    "type": "formula",
+    "text": null,
+    "latex": "$$ \\frac{3x-1}{2}<x+4 $$",
+    "bbox": [
+      816.0,
+      568.0,
+      1474.0,
+      726.0
+    ],
+    "confidence": null,
+    "order": 1
+  },
+  {
+    "type": "paragraph",
+    "text": "Tập nghiệm $S = (-\\infty; 9)$.",
+    "latex": null,
+    "bbox": [
+      446.0,
+      1028.0,
+      1225.0,
+      1109.0
+    ],
+    "confidence": null,
+    "order": 2
+  }
+]

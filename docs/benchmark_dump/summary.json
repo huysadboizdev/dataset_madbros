@@ -1,0 +1,53 @@
+{
+ "model_load_s": 52.5,
+ "meta": {
+  "engine": "paddleocr_vl",
+  "paddleocr_version": "3.7.0",
+  "paddlex_version": "3.7.2",
+  "device": "cpu",
+  "render_dpi": 200,
+  "declared": {
+   "pipeline_version": "v1.6",
+   "layout_model_name": "PP-DocLayoutV3",
+   "vl_rec_model_name": "PaddleOCR-VL-1.6"
+  },
+  "resolved_pipeline": "PaddleOCR-VL-1.6",
+  "resolved_layout_model": "PP-DocLayoutV3",
+  "resolved_vl_model": "PaddleOCR-VL-1.6-0.9B",
+  "resolved_layout_threshold": 0.3,
+  "merge_layout_blocks": true,
+  "model_rev": {
+   "PP-DocLayoutV3": {
+    "dir": "[PATH]",
+    "config_sha256": {
+     "inference.yml": "506fcfac13b3b546ae40d7886b44126420f392adb694e3f8bb6a6286a1f90fdc"
+    },
+    "weights_size": {}
+   },
+   "PaddleOCR-VL-1.6-0.9B": {
+    "dir": "[PATH]",
+    "config_sha256": {
+     "config.json": "ce7f4565f8b1db78532ad5d1b9ebe55c2139d49bd4cb04778b580a08a598f171",
+     "inference.yml": "1587aece2d6442366efce34161d5f7d5f67f09ebfbf043168e5fade892c2780e",
+     "generation_config.json": "a6701d78ab3b4d972307cdec3b69d4c13f46e0d5140514f50ab7d84259324b94"
+    },
+    "weights_size": {
+     "model.safetensors": 1917255968
+    }
+   }
+  }
+ },
+ "rows": [
+  {
+   "page": 6,
+   "s": 230.7,
+   "blocks": 4,
+   "chars": 557,
+   "visual_skipped": 0,
+   "empty_blocks": 0,
+   "text_layer_chars": 0,
+   "warnings": [],
+   "peak_ram_mb": 8631
+  }
+ ]
+}

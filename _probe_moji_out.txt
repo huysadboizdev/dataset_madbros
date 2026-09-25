@@ -1,0 +1,10 @@
+e2e_real_run0915.err.sanitized: utf-8 OK, marker_moji=0
+e2e_real_run0915.log.sanitized: utf-8 OK, marker_moji=0
+   HEAD: document: doc_2eefaa19dc65 pages: 138
+   HEAD:   [0s] status=RUNNING model_phase=None current=None
+formula_run0915.err.sanitized: utf-8 OK, marker_moji=0
+   HEAD: python.exe : [32mCreating model: ('PP-DocLayoutV3', None, None)[0m
+   HEAD: At line:1 char:1
+formula_run0915.log.sanitized: utf-8 OK, marker_moji=0
+   HEAD: fixture set that: [PATH]
+   HEAD: model that: layout=PP-DocLayoutV3 vl=PaddleOCR-VL-1.6-0.9B (paddleocr 3.7.0)

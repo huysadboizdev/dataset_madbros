@@ -1,0 +1,301 @@
+[
+  {
+    "type": "heading",
+    "text": "Ví dụ 2",
+    "latex": null,
+    "bbox": [
+      310.0,
+      164.0,
+      415.0,
+      203.0
+    ],
+    "confidence": null,
+    "order": 0
+  },
+  {
+    "type": "paragraph",
+    "text": "Cho các mệnh đề chứa biến:",
+    "latex": null,
+    "bbox": [
+      310.0,
+      208.0,
+      676.0,
+      250.0
+    ],
+    "confidence": null,
+    "order": 1
+  },
+  {
+    "type": "paragraph",
+    "text": "a) $ P(x) $: “2x = 1”.",
+    "latex": null,
+    "bbox": [
+      309.0,
+      259.0,
+      534.0,
+      297.0
+    ],
+    "confidence": null,
+    "order": 2
+  },
+  {
+    "type": "paragraph",
+    "text": "b) $ R(x, y) $: “2x + y = 3” (mệnh đề này chứa hai biến x và y);",
+    "latex": null,
+    "bbox": [
+      308.0,
+      309.0,
+      1062.0,
+      350.0
+    ],
+    "confidence": null,
+    "order": 3
+  },
+  {
+    "type": "paragraph",
+    "text": "c) $ T(n) $: “2n + 1 là số chăn” (n là số tự nhiên).",
+    "latex": null,
+    "bbox": [
+      307.0,
+      356.0,
+      894.0,
+      398.0
+    ],
+    "confidence": null,
+    "order": 4
+  },
+  {
+    "type": "paragraph",
+    "text": "Với mỗi mệnh đề chưa biến trên, tìm những giá trị của biến đổi nhận được một mệnh đề đúng và một mệnh đề sai.",
+    "latex": null,
+    "bbox": [
+      308.0,
+      404.0,
+      1412.0,
+      487.0
+    ],
+    "confidence": null,
+    "order": 5
+  },
+  {
+    "type": "heading",
+    "text": "Giải",
+    "latex": null,
+    "bbox": [
+      780.0,
+      501.0,
+      846.0,
+      536.0
+    ],
+    "confidence": null,
+    "order": 6
+  },
+  {
+    "type": "paragraph",
+    "text": "a) Với $ x=\\frac{1}{2} $ thì $ P\\left(\\frac{1}{2}\\right) $: “2 $ \\cdot $ $ \\frac{1}{2} $=1” là mệnh đề đúng.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      544.0,
+      1001.0,
+      627.0
+    ],
+    "confidence": null,
+    "order": 7
+  },
+  {
+    "type": "paragraph",
+    "text": "Với x = 1 thì $ P(1) $: “2. 1 = 1” là mệnh đề sai.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      638.0,
+      888.0,
+      680.0
+    ],
+    "confidence": null,
+    "order": 8
+  },
+  {
+    "type": "paragraph",
+    "text": "b) Với x = 1, y = 1 thì $ R(1,1) $: “2.1+1=3” là mệnh đề đúng.",
+    "latex": null,
+    "bbox": [
+      309.0,
+      691.0,
+      1080.0,
+      733.0
+    ],
+    "confidence": null,
+    "order": 9
+  },
+  {
+    "type": "paragraph",
+    "text": "Với x = 1, y = 2 thì $ R(1, 2) $: “2.1 + 2 = 3” là mệnh đề sai.",
+    "latex": null,
+    "bbox": [
+      309.0,
+      742.0,
+      1031.0,
+      783.0
+    ],
+    "confidence": null,
+    "order": 10
+  },
+  {
+    "type": "paragraph",
+    "text": "c) Lấy số tự nhiên $ n_0 $ bắt kì ta đều được $ 2n_0 + 1 $ là một số lẻ, nghĩa là $ T(n_0) $: “ $ 2n_0 + 1 $ là số chăn” là mệnh đề sai. Do đó, không có giá trị $ n_0 $ của $ n $ để $ T(n_0) $ là mệnh đề đúng. $ T(n_0) $ là mệnh đề sai với số tự nhiên $ n_0 $ bắt kì.",
+    "latex": null,
+    "bbox": [
+      305.0,
+      794.0,
+      1405.0,
+      919.0
+    ],
+    "confidence": null,
+    "order": 11
+  },
+  {
+    "type": "paragraph",
+    "text": "Với mỗi mệnh đề chứa biến sau, tìm những giá trị của biến để nhận được một mệnh đề đúng và một mệnh đề sai.",
+    "latex": null,
+    "bbox": [
+      227.0,
+      931.0,
+      1410.0,
+      1022.0
+    ],
+    "confidence": null,
+    "order": 12
+  },
+  {
+    "type": "paragraph",
+    "text": "a) $ P(x) $: “ $ x^2 = 2 $”;",
+    "latex": null,
+    "bbox": [
+      308.0,
+      1034.0,
+      534.0,
+      1074.0
+    ],
+    "confidence": null,
+    "order": 13
+  },
+  {
+    "type": "paragraph",
+    "text": "b) $ Q(x) $: “ $ x^2 + 1 > 0 $”;",
+    "latex": null,
+    "bbox": [
+      309.0,
+      1085.0,
+      588.0,
+      1125.0
+    ],
+    "confidence": null,
+    "order": 14
+  },
+  {
+    "type": "paragraph",
+    "text": "c) $ R(n) $: “ $ n + 2 $ chia hết cho 3” (n là số tự nhiên).",
+    "latex": null,
+    "bbox": [
+      308.0,
+      1135.0,
+      927.0,
+      1177.0
+    ],
+    "confidence": null,
+    "order": 15
+  },
+  {
+    "type": "heading",
+    "text": "3. Mệnh đề phủ định",
+    "latex": null,
+    "bbox": [
+      213.0,
+      1208.0,
+      570.0,
+      1254.0
+    ],
+    "confidence": null,
+    "order": 16
+  },
+  {
+    "type": "skipped_visual",
+    "text": null,
+    "latex": null,
+    "bbox": [
+      215.0,
+      1266.0,
+      290.0,
+      1333.0
+    ],
+    "confidence": null,
+    "order": 17
+  },
+  {
+    "type": "paragraph",
+    "text": "Xét các cặp mệnh đề năm cùng dòng của bảng (có hai cột P và $ \\overline{P} $) sau đây:",
+    "latex": null,
+    "bbox": [
+      308.0,
+      1272.0,
+      1264.0,
+      1317.0
+    ],
+    "confidence": null,
+    "order": 18
+  },
+  {
+    "type": "table",
+    "text": "| P | $ \\overline{P} $ |\n|---|---|\n| Dơi là một loài chim. | Dơi không phải là một loài chim. |\n| $ \\pi $ không phải là một số hữu tỉ. | $ \\pi $ là một số hữu tỉ. |\n| $ \\sqrt{2} + \\sqrt{3} &gt; \\sqrt{5} $. | $ \\sqrt{2} + \\sqrt{3} \\leq \\sqrt{5} $. |\n| $ \\sqrt{2}.\\sqrt{18}=6 $. | $ \\sqrt{2}.\\sqrt{18} \\neq 6 $. |",
+    "latex": null,
+    "bbox": [
+      315.0,
+      1340.0,
+      1236.0,
+      1683.0
+    ],
+    "confidence": null,
+    "order": 19
+  },
+  {
+    "type": "paragraph",
+    "text": "Nêu nhận xét về tính đúng sai của hai mệnh đề cùng cặp.",
+    "latex": null,
+    "bbox": [
+      307.0,
+      1710.0,
+      1035.0,
+      1754.0
+    ],
+    "confidence": null,
+    "order": 20
+  },
+  {
+    "type": "paragraph",
+    "text": "Với từng cặp mệnh đề P và $ \\overline{P} $ ở 3, ta thấy chúng có tính đứng sai trái ngược nhau (P đứng thì $ \\overline{P} $ sai và ngược lại). Ta nói mệnh đề $ \\overline{P} $ là mệnh đề phủ định (hoặc phủ định) của mệnh đề P.",
+    "latex": null,
+    "bbox": [
+      252.0,
+      1774.0,
+      1409.0,
+      1875.0
+    ],
+    "confidence": null,
+    "order": 21
+  },
+  {
+    "type": "paragraph",
+    "text": "9",
+    "latex": null,
+    "bbox": [
+      1383.0,
+      1928.0,
+      1410.0,
+      1959.0
+    ],
+    "confidence": null,
+    "order": 22
+  }
+]
