@@ -9,7 +9,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-from .api import documents, exports, jobs, results
+from .api import documents, exports, jobs, results, dataset, exams, review, chunks, rag, finetune, issues
 from .db import Database
 from .services.job_service import JobManager
 from .settings import Settings, load_settings
@@ -112,6 +112,13 @@ def create_app(settings: Optional[Settings] = None, engine: Optional[str] = None
     app.include_router(jobs.router)
     app.include_router(results.router)
     app.include_router(exports.router)
+    app.include_router(dataset.router)
+    app.include_router(exams.router)
+    app.include_router(review.router)
+    app.include_router(chunks.router)
+    app.include_router(rag.router)
+    app.include_router(finetune.router)
+    app.include_router(issues.router)
 
     dist = settings.project_root / "frontend" / "dist"
     if dist.exists():

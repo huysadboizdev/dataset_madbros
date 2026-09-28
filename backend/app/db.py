@@ -89,6 +89,101 @@ MIGRATIONS: list[str] = [
     """
     ALTER TABLE issues ADD COLUMN content_fp TEXT;
     """,
+    # version 4: nguon dataset (SOP §2.1) — source_id la danh tinh chuan, phien ban +
+    # lich su trang thai + danh sach file theo SHA-256. Append-only, khong cham bang cu.
+    """
+    CREATE TABLE sources(
+      source_id TEXT PRIMARY KEY,
+      subject TEXT NOT NULL,
+      grade INTEGER NOT NULL,
+      document_type TEXT NOT NULL,
+      curriculum_reference TEXT,
+      language TEXT NOT NULL,
+      title TEXT NOT NULL,
+      publisher TEXT,
+      source_url TEXT,
+      retrieved_at TEXT NOT NULL,
+      publication_year INTEGER,
+      revision_date TEXT,
+      school_year TEXT,
+      year_evidence TEXT NOT NULL,
+      rights_status TEXT NOT NULL,
+      allowed_uses TEXT,
+      pii_status TEXT NOT NULL,
+      review_status TEXT NOT NULL,
+      status TEXT NOT NULL,
+      topic TEXT,
+      source_version INTEGER NOT NULL DEFAULT 1,
+      content_hash TEXT NOT NULL,
+      schema_version TEXT NOT NULL,
+      owner_code TEXT,
+      reviewer_code TEXT,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL
+    );
+    CREATE TABLE source_events(
+      event_id TEXT PRIMARY KEY,
+      source_id TEXT NOT NULL REFERENCES sources(source_id),
+      from_status TEXT,
+      to_status TEXT NOT NULL,
+      reason_code TEXT,
+      note TEXT,
+      actor_role TEXT,
+      created_at TEXT NOT NULL
+    );
+    CREATE TABLE source_files(
+      file_id TEXT PRIMARY KEY,
+      source_id TEXT NOT NULL REFERENCES sources(source_id),
+      sha256 TEXT NOT NULL,
+      rel_path TEXT NOT NULL,
+      kind TEXT,
+      size_bytes INTEGER,
+      created_at TEXT NOT NULL
+    );
+    CREATE INDEX idx_sources_content_hash ON sources(content_hash);
+    CREATE INDEX idx_source_files_sha256 ON source_files(sha256);
+    CREATE INDEX idx_source_events_source ON source_events(source_id);
+    """,
+    # version 5: review workflow (GĐ4) — source_review_events cho quyet dinh duyet
+    """
+    CREATE TABLE source_review_events(
+        decision_id TEXT PRIMARY KEY,
+        source_id TEXT NOT NULL REFERENCES sources(source_id),
+        decision TEXT NOT NULL,  -- APPROVED | RETURNED | HOLD | REJECTED
+        reason_code TEXT,
+        note TEXT,
+        actor_role TEXT NOT NULL,
+        actor_code TEXT NOT NULL,
+        previous_status TEXT NOT NULL,
+        new_status TEXT NOT NULL,
+        created_at TEXT NOT NULL
+    );
+    CREATE INDEX idx_source_review_events_source ON source_review_events(source_id);
+    CREATE INDEX idx_source_review_events_created ON source_review_events(created_at);
+    """,
+    # version 6: source issues (SOP §9.3) — phiếu lỗi chi tiết cho phát hành
+    """
+    CREATE TABLE source_issues(
+        issue_id TEXT PRIMARY KEY,
+        source_id TEXT NOT NULL REFERENCES sources(source_id),
+        source_version INTEGER NOT NULL,
+        severity TEXT NOT NULL,  -- BLOCKER | HIGH | MEDIUM | LOW
+        error_type TEXT NOT NULL,
+        location TEXT,  -- page/slide/câu (JSON)
+        description TEXT NOT NULL,
+        evidence TEXT,
+        assignee_code TEXT,
+        deadline TEXT,
+        resolved_at TEXT,
+        resolution TEXT,
+        status TEXT NOT NULL DEFAULT 'open',  -- open | in_progress | resolved | wont_fix
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+    );
+    CREATE INDEX idx_source_issues_source ON source_issues(source_id);
+    CREATE INDEX idx_source_issues_status ON source_issues(status);
+    CREATE INDEX idx_source_issues_severity ON source_issues(severity);
+    """
 ]
 
 
@@ -136,6 +231,30 @@ class Database:
                 for sql, params in statements:
                     self._conn.execute(sql, params)
                 self._conn.commit()
+            except Exception:
+                self._conn.rollback()
+                raise
+
+    def executemany_commit_guarded(
+        self, guard: tuple[str, tuple], statements: list[tuple[str, tuple]]
+    ) -> int:
+        """Transaction có guard CAS (compare-and-swap) — dùng cho transition trạng thái.
+
+        - guard phải là UPDATE ảnh hưởng ĐÚNG 1 dòng (`WHERE ... AND status=?`).
+          Không khớp (đã bị chuyển bởi thread khác / id không tồn tại) → rollback,
+          KHÔNG ghi gì, trả về rowcount (0).
+        - Khớp 1 dòng → chạy tiếp `statements` (ghi event...) TRONG CÙNG transaction.
+        """
+        with self._lock:
+            try:
+                cur = self._conn.execute(guard[0], guard[1])
+                if cur.rowcount != 1:
+                    self._conn.rollback()
+                    return cur.rowcount
+                for sql, params in statements:
+                    self._conn.execute(sql, params)
+                self._conn.commit()
+                return cur.rowcount
             except Exception:
                 self._conn.rollback()
                 raise

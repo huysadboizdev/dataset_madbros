@@ -245,6 +245,7 @@ Mở rộng lên dataset trong khi nền còn lỗ hổng identity/sanitize là 
 | 4.1 | Vai trò + ràng buộc người duyệt ≠ người làm sạch | team-coder | transition APPROVED fail nếu cùng actor |
 | 4.2 | Bản ghi duyệt + lý do `RETURNED`/`HOLD`/`REJECTED` | team-coder | mọi quyết định lưu vết bất biến |
 | 4.3 | Issue sheet đủ trường §9.3 + báo cáo lô | team-coder | `issue_id, source_id, version, vị trí, loại, mức, mô tả, người nhận, hạn, bằng chứng` |
+| 4.3b | Issue tracker module + API (SOP §9.3 chi tiết) | team-coder | Migration v6 `source_issues` table; `backend/app/dataset/issue_tracker.py` + `backend/app/api/issues.py`; severity BLOCKER/HIGH/MEDIUM/LOW; status open/in_progress/resolved/wont_fix; location JSON; kiểm tra blockers |
 | 4.4 | UI duyệt/từ chối + checklist §5.4 | team-integration | 100% mục checklist phải tick mới cho APPROVED |
 | 4.5 | Cổng nghiệm thu GĐ1 (§5.4) tự động | team-coder | không tính HOLD/RETURNED vào tiến độ |
 
