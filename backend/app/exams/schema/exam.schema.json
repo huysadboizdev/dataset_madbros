@@ -1,0 +1,251 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pdf-cleaner-tool.example.com/schemas/exam.schema.json",
+  "title": "Exam JSON Schema",
+  "description": "Schema cho JSON đề thi theo SOP §4 - hỗ trợ 4 loại câu hỏi: single, multi, essay, true_false",
+  "type": "object",
+  "required": ["exam_id", "metadata", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "exam_id": {
+      "type": "string",
+      "pattern": "^EXAM_[A-Z]{2,4}_G[0-9]{2}_[0-9]{4}_[A-F0-9]{4}$",
+      "description": "Định danh duy nhất đề thi: EXAM_SUBJECT_GRADE_YEAR_SEQ (SEQ có thể là hex)"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["subject", "grade", "duration_minutes", "total_score", "created_at", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "type": "string",
+          "enum": ["MATH", "ENG", "PHY", "CHE", "BIO", "HIS", "GEO", "CIV", "TEC", "INF"],
+          "description": "Môn học"
+        },
+        "grade": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 12,
+          "description": "Khối lớp (10, 11, 12)"
+        },
+        "duration_minutes": {
+          "type": "integer",
+          "minimum": 15,
+          "maximum": 300,
+          "description": "Thời gian làm bài (phút)"
+        },
+        "total_score": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 100,
+          "multipleOf": 0.25,
+          "description": "Tổng điểm tối đa của đề"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2,4}_G[0-9]{2}_[0-9]{4}_[0-9]{4}$"
+          },
+          "description": "Danh sách source_id liên quan (để truy xuất ngữ cảnh)"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Thời điểm tạo (ISO 8601)"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "description": "Phiên bản schema (semver)"
+        },
+        "description": {
+          "type": ["string", "null"],
+          "maxLength": 500,
+          "description": "Mô tả ngắn về đề thi"
+        }
+      }
+    },
+    "contexts": {
+      "type": "array",
+      "description": "Các ngữ cảnh chung (bài đọc tiếng Anh, đoạn văn tham chiếu)",
+      "items": {
+        "type": "object",
+        "required": ["context_id", "content", "type"],
+        "additionalProperties": false,
+        "properties": {
+          "context_id": {
+            "type": "string",
+            "pattern": "^ctx_[a-f0-9]{12}$",
+            "description": "Định danh ngữ cảnh (UUID ngắn)"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["reading_passage", "reference_text", "data_table", "image_description", "audio_transcript"],
+            "description": "Loại ngữ cảnh"
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Nội dung ngữ cảnh (Markdown, có thể chứa LaTeX)"
+          },
+          "language": {
+            "type": "string",
+            "enum": ["vi", "en", "mixed"],
+            "default": "vi",
+            "description": "Ngôn ngữ chính của ngữ cảnh"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Metadata bổ sung (source_id, page, section, etc.)"
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "description": "Danh sách câu hỏi",
+      "items": {
+        "type": "object",
+        "required": ["question_id", "type", "content", "score"],
+        "additionalProperties": false,
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "pattern": "^q_[a-f0-9]{12}$",
+            "description": "Định danh câu hỏi (UUID ngắn)"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["single", "multi", "essay", "true_false"],
+            "description": "Loại câu hỏi"
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Nội dung câu hỏi (Markdown + LaTeX)"
+          },
+          "context_id": {
+            "type": ["string", "null"],
+            "pattern": "^ctx_[a-f0-9]{12}$",
+            "description": "ID ngữ cảnh liên quan (null nếu câu hỏi độc lập)"
+          },
+          "options": {
+            "type": "array",
+            "description": "Các lựa chọn - bắt buộc cho single/multi/true_false, cấm cho essay",
+            "items": {
+              "type": "object",
+              "required": ["option_id", "text"],
+              "additionalProperties": false,
+              "properties": {
+                "option_id": {
+                  "type": "string",
+                  "pattern": "^opt_[a-f0-9]{8}$",
+                  "description": "Định danh lựa chọn"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Nội dung lựa chọn (Markdown + LaTeX)"
+                }
+              }
+            }
+          },
+          "correct_option_ids": {
+            "type": "array",
+            "description": "IDs của đáp án đúng - bắt buộc cho single/multi/true_false",
+            "items": {
+              "type": "string",
+              "pattern": "^opt_[a-f0-9]{8}$"
+            }
+          },
+          "correct_answer": {
+            "type": ["string", "null"],
+            "description": "Đáp án mẫu cho essay (null cho các loại khác)"
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0.25,
+            "maximum": 20,
+            "multipleOf": 0.25,
+            "description": "Điểm của câu hỏi"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["easy", "medium", "hard"],
+            "default": "medium",
+            "description": "Độ khó"
+          },
+          "topic": {
+            "type": "string",
+            "maxLength": 100,
+            "description": "Chủ đề/đơn元知识"
+          },
+          "explanation": {
+            "type": ["string", "null"],
+            "description": "Lời giải/tham khảo (Markdown + LaTeX)"
+          },
+          "explanation_origin": {
+            "type": ["string", "null"],
+            "enum": ["source", "expert_authored", "ai_assisted", null],
+            "description": "Nguồn gốc lời giải: source (từ tài liệu), expert_authored (biên soạn viên), ai_assisted (AI hỗ trợ)"
+          },
+          "source_locator": {
+            "type": ["string", "null"],
+            "description": "Vị trí nguồn gốc: source_id:page_number:question_index để truy xuất lại nguồn gốc (SOP §4.1)"
+          },
+          "metadata": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Metadata bổ sung (source_id, page, bloom_level, etc.)"
+          }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "type": { "const": "single" } } },
+            "then": {
+              "required": ["options", "correct_option_ids"],
+              "properties": {
+                "options": { "minItems": 2, "maxItems": 6 },
+                "correct_option_ids": { "minItems": 1, "maxItems": 1 }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "type": { "const": "multi" } } },
+            "then": {
+              "required": ["options", "correct_option_ids"],
+              "properties": {
+                "options": { "minItems": 3, "maxItems": 8 },
+                "correct_option_ids": { "minItems": 2 }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "type": { "const": "true_false" } } },
+            "then": {
+              "required": ["options", "correct_option_ids"],
+              "properties": {
+                "options": { "minItems": 2, "maxItems": 2 },
+                "correct_option_ids": { "minItems": 1, "maxItems": 1 }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "type": { "const": "essay" } } },
+            "then": {
+              "required": ["correct_answer"],
+              "properties": {
+                "options": { "maxItems": 0 },
+                "correct_option_ids": { "maxItems": 0 }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
